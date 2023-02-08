@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor1: #001542;
+    --cor2: #085454;
+    --cor3: #7A7A7A;
+    --cor4: #FFFFFF;
+    --cor5: #FFB30D;
+
+    --fonte-padrao: verdana, Arial, Helvetica, Tahoma, verdana, Trebuchet, sans-serif;
+    --fonte-destaque: Georgia ,'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif, 'Times New Roman';
+}
+
+.carrosel {
+    width: 700px;
+    height: 394px;
+    overflow: hidden;
+    margin: 20px auto;
+    box-shadow: 10px 10px 12px var(--cor3);
+    background-color: var(--cor1);
+    border-radius: 5px;
+}
+
+.carrosel ul{
+    display: flex;
+    list-style: none;
+    width: 2100px;
+    height: 394px;
+    
+}
+
+.carrosel li {
+    position: relative;
+    animation: slide 30s infinite ease-out;
+}
+
+.carrosel img {
+    width: 100%;
+    height: auto;
+}
+
+.barraInicio {
+    color: #001542;
+}
+
+@keyframes slide {
+    0%{left: 0px;}
+
+    15%{left: 0px;}
+
+    30%{left: -700px;}
+
+    45%{left: -700px;}
+
+    60%{left: -1400px}
+
+    75%{left: -1400px}
+
+    100%{left: 0px;}
+}
+
+@media screen and (max-width: 800px) {
+    .carrosel {
+        width: 500px;
+        height: 280px;
+        overflow: hidden;
+        margin: auto;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
+        background-color: black;
+    }
+    
+    .carrosel ul{
+        display: flex;
+        list-style: none;
+        width: 1500px;
+        height: 280px;  
+    }
+
+    @keyframes slide {
+        0%{left: 0px;}
+    
+        15%{left: 0px;}
+    
+        30%{left: -500px;}
+    
+        45%{left: -500px;}
+    
+        60%{left: -1000px}
+    
+        75%{left: -1000px}
+    
+        100%{left: 0px;}
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .carrosel {
+        width: 300px;
+        height: 169px;
+        overflow: hidden;
+        margin: auto;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
+        background-color: black;
+    }
+    
+    .carrosel ul{
+        display: flex;
+        list-style: none;
+        width: 900px;
+        height: 168px; 
+    }
+
+    @keyframes slide {
+        0%{left: 0px;}
+    
+        15%{left: 0px;}
+    
+        30%{left: -300px;}
+    
+        45%{left: -300px;}
+    
+        60%{left: -600px}
+    
+        75%{left: -600px}
+    
+        100%{left: 0px;}
+    }
+}
