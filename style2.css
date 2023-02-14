@@ -276,6 +276,11 @@ main .intro { /*Formatação do texto da pagina inicial*/
     border-radius: 4px;
 }
 
+.vesic:hover {
+    background-color: rgb(226, 226, 226) ;
+    padding: 4px;
+}
+
 h3 {
     font-family: var(--fonte-padrao);
     font-size: 19px;
