@@ -105,6 +105,10 @@ header {
     height: 40px;
 }
 
+#playlist a {
+    display: none;
+}
+
 div > .video {
     min-width: 70%;
     min-height: 150px;
