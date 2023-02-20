@@ -25,6 +25,43 @@ picture {
     justify-content: center;   
 }
 
+header {
+    min-height: 150px;
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor1));
+}
+
+header > h1 {
+    color: var(--cor5);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 2.5em;
+    min-width: 240px;
+    max-width: 862px;
+    padding-top: 5px;
+    margin: auto;
+}
+
+header > p {
+    font-family: var(--fonte-padrao);
+    font-size: 0.5cm;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    max-width: 600px;
+    margin-top: 10px;
+    padding-top: 20px;
+    margin: auto;
+}
+
+header > p.rodape {
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    color: white;
+    padding-top: 0;
+    padding-bottom: 20px;
+    margin: auto;
+}
+
 article a {
     color: var(--cor1);
     font-family: var(--fonte-padrao);
@@ -71,11 +108,6 @@ article a:hover {
 .imgnt > img {
     border-radius: 5px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.514);
-}
-
-header {
-    min-height: 150px;
-    background-image: linear-gradient(to bottom, var(--cor3), var(--cor1));
 }
 
 .video-container {
@@ -175,7 +207,6 @@ div > .video {
 
 .dropdown-content a:hover {
     font-size: 17px;
-    text-shadow: 2px 2px 4px var(--cor2);
     background-color: rgb(230, 230, 230);
     border-radius: 4px;
 }
@@ -221,40 +252,6 @@ figcaption a {
     
 }
 
-header > h1 {
-    font-family: var(--fonte-destaque);
-    text-align: center;
-    font-size: 2.5em;
-    text-shadow: 2px 2px 0px var(--cor5);
-    min-width: 240px;
-    max-width: 862px;
-    padding-top: 40px;
-    margin: auto;
-}
-
-header > p {
-    font-family: var(--fonte-padrao);
-    font-size: 0.4cm;
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    max-width: 600px;
-    text-shadow: 1px 1px 0px black;
-    margin-top: 10px;
-    padding-top: 20px;
-    margin: auto;
-}
-
-header > p.rodape {
-    font-size: 1em;
-    color: white;
-    padding-bottom: 5px;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.555);
-    margin: auto;
-}
-
-
-
 main {
     padding: 20px;
     margin: 10px;
@@ -272,12 +269,6 @@ p {  /*Formatação principal dos textos*/
         text-align: justify;
         text-indent: 20px;
         line-height: 1.6em;
-}
-
-main .intro { /*Formatação do texto da pagina inicial*/
-    text-shadow: 3px 3px 5px var(--cor3);
-    padding: 6px;
-    border-radius: 4px;
 }
 
 .vesic:hover {
