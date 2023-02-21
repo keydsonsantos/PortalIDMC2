@@ -314,14 +314,6 @@ aside > h3 {
     color: white;
 }
 
-h3.site-externo {
-    font-family: var(--fonte-destaque);
-    text-align: center;
-    font-weight: bolder;
-    text-shadow: 2px 2px 0px #FFB30D;
-    padding-bottom: 20px;
-}
-
 footer {
     background-color: #001542;
 }
