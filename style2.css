@@ -176,14 +176,17 @@ div > .video {
 }
 
 #tele img {
-    width: 30%; height: auto;
+    width: 5%; height: auto;
     display: flex;
-    margin-top: 6px; position: sticky;
-    padding: 0 10px;
+    float: right;
+    margin-top: -50px; 
+    padding: 10px 10px;
 }
 
 #tele img:hover {
-    width: 33%;
+    border-radius: 50%;
+    background-color: var(--cor5);
+    
 }
 
 .active {
@@ -397,6 +400,8 @@ a.externo::after {
 }
 
 table {
+    display: flex;
+    justify-content: center;
     margin: auto;
 }
 
