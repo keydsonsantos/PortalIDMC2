@@ -175,6 +175,18 @@ div > .video {
     cursor: pointer;
 }
 
+#tele img {
+    width: 30%; height: auto;
+    display: flex;
+    margin-top: 6px; position: sticky;
+    padding: 0 10px;
+}
+
+#tele img:hover {
+    width: 33%;
+    background-color: var(--cor5);
+}
+
 .active {
     text-shadow: 1px 1px 2px var(--cor5);
 }
