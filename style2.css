@@ -453,6 +453,13 @@ aside {
     margin: auto;
 }
 
+aside article {
+    width: 100%; height: auto; 
+    padding: 5px;
+    background-image: url(img/banner-Israel.png);
+    justify-content: center;
+}
+
 aside p {
     text-align: center;
 }
@@ -482,14 +489,16 @@ aside > h3 {
 }
 
 h3.site-externo {
+    color: var(--cor4);
     font-family: var(--fonte-destaque);
     text-align: center;
-    font-weight: bolder;
-    text-shadow: 1px 1px 0px #FFB30D;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px var(--cor1);
     padding-bottom: 20px;
 }
 
 footer {
+    width: 100%;
     background-image: linear-gradient(to bottom, var(--cor4), var(--cor1));
 }
 
