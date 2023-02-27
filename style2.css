@@ -495,11 +495,11 @@ aside > h3 {
 }
 
 h3.site-externo {
-    color: var(--cor4);
+    color: var(--cor5);
     font-family: var(--fonte-destaque);
     text-align: center;
     font-weight: 700;
-    text-shadow: 2px 2px 2px var(--cor1);
+    text-shadow: 1px 1px 1px var(--cor1);
     padding-bottom: 20px;
 }
 
