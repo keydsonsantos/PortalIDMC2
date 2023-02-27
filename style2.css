@@ -453,25 +453,13 @@ aside {
     margin: auto;
 }
 
-.banner {
-    width: 100%; float: left;
-    background: url(img/banner-Israel.png);
-}
-
-.title {
-    width: 100%;
-}
-
-.title h2 {
-    font-size: 1.2em; color: var(--cor4);
-}
-
-aside p {
+aside article p {
+    color: var(--cor4);
     text-align: center;
 }
 
-aside a {
-    color: var(--cor4);
+aside article a {
+    
     background-color: var(--cor1);
     font-family: var(--fonte-padrao);
     font-weight: bolder;
@@ -480,11 +468,10 @@ aside a {
     text-decoration: none;
 }
 
-aside a:hover {
-    color: var(--cor4);
+aside article a:hover {
+    
     padding: 10px;
     border-radius: 5px;
-    transition-duration: 0.5s;
 }
 
 aside > h3 {
