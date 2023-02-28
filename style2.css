@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+/*===============cabeçalho================*/
 * {
     padding: 0px;
     margin: 0px;
@@ -22,7 +22,19 @@ body {
 
 picture {
     display: flex;
-    justify-content: center;   
+    justify-content: center;  
+}
+
+.imgpag-container { /*imagens das paginas*/
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.imgpag-container > img {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.514);
 }
 
 header {
@@ -62,14 +74,7 @@ header > p.rodape {
     margin: auto;
 }
 
-article a {
-    color: var(--cor1);
-    font-family: var(--fonte-padrao);
-    font-weight: bolder;
-    text-decoration: none;
-}
-
-main a {
+/*article a {
     color: var(--cor1);
     font-family: var(--fonte-padrao);
     font-weight: bolder;
@@ -82,7 +87,7 @@ article a:hover {
     padding: 5px;
     border-radius: 5px;
     transition-duration: 0.5s;
-}
+}*/
 
 .imgpag-container { /*imagens das paginas*/
     min-width: 100%;
@@ -108,33 +113,6 @@ article a:hover {
 .imgnt > img {
     border-radius: 5px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.514);
-}
-
-.video-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 78px;
-    padding: 6px 5px;
-    margin: 0 -6px;
-    width: 100%;
-    background-color: var(--cor1);
-}
-
-.audio-container {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 38px;
-    max-width: 100%;
-    height: 40px;
-    margin-bottom: 10px;
-    background-color: rgb(241, 242, 241);;
-}
-
-.audio-container > audio {
-    height: 40px;
 }
 
 #playlist a {
@@ -173,23 +151,6 @@ div > .video {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-#tele img {
-    width: 40px; height: auto;
-    display: flex;
-    float: right;
-    margin-top: -50px; 
-    padding: 10px 10px;
-}
-
-#tele img:hover {
-    border-radius: 50%;
-    background-color: var(--cor5);
-}
-
-.active {
-    text-shadow: 1px 1px 2px var(--cor5);
 }
 
 .dropdown {
@@ -264,7 +225,7 @@ figcaption a {
     max-width: 100%;
     
 }
-
+/*======================main========================*/
 main {
     padding: 20px;
     margin: 10px;
@@ -276,7 +237,7 @@ main {
     margin-bottom: 10px;
 }
 
-p {  /*Formatação principal dos textos*/
+main p {  /*Formatação principal dos textos*/
         font-family: var(--fonte-padrao);
         margin: 15px 0px;
         text-align: justify;
@@ -284,12 +245,57 @@ p {  /*Formatação principal dos textos*/
         line-height: 1.6em;
 }
 
+main a {
+    color: var(--cor1);
+    font-family: var(--fonte-padrao);
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+main a:hover {
+    color: var(--cor4);
+    background-color: var(--cor5);
+    padding: 5px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+/*==================midias================*/
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 78px;
+    padding: 6px 5px;
+    margin: 0 -6px;
+    width: 100%;
+    background-color: var(--cor1);
+}
+
+.audio-container {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 38px;
+    max-width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    background-color: rgb(241, 242, 241);;
+}
+
+.audio-container > audio {
+    height: 40px;
+}
+/*fim*/
+
 .vesic:hover {
     background-color: rgb(226, 226, 226) ;
     padding: 4px;
 }
 
-h3 {
+main h3 {
     font-family: var(--fonte-padrao);
     font-size: 19px;
     margin: 15px 0px;
@@ -298,13 +304,22 @@ h3 {
     line-height: 1.6em;
 }
 
-h1 {
-    font-family: var(--fonte-destaque);
+main h1 {
     text-align: center;
-    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: var(--fonte-destaque);
+    margin-bottom: 30px;
+    padding-left: 15px;
+    font-size: 1.4em;
 }
 
-h1.titaula {
+.top {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.titaula {
     color: #001542;
     text-shadow: 2px 2px #d8c190;
 }
@@ -320,16 +335,14 @@ h1.titaula {
     font-style: oblique;
 }
 
-.noti {
-    color: var(--cor1);
-    background-color: #b4b4b4;
-    padding: 6px;
-    border: 1px var(--cor1);
-    border-radius: 5px;
-    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
-    font-family: var(--fonte-padrao);
+.titulo-home {
+    font-family: var(--fonte-destaque);
+    background-image: linear-gradient(to right, var(--cor1), var(--cor1));
+    color: var(--cor5);
+    margin-top: 30px;
+    font-size: 1.1em;
     font-weight: bold;
-    font-style: oblique;
+    border-radius: 5px;
 }
 
 .titulo-discp {
@@ -347,6 +360,18 @@ h1.titaula {
     
 }
 
+.noti {
+    color: var(--cor1);
+    background-color: #b4b4b4;
+    padding: 6px;
+    border: 1px var(--cor1);
+    border-radius: 5px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+    font-family: var(--fonte-padrao);
+    font-weight: bold;
+    font-style: oblique;
+}
+
 .titulo-nt {
     font-family: var(--fonte-destaque);
     background-color: var(--cor3);
@@ -359,6 +384,12 @@ h1.titaula {
     font-size: 1.1em;
     font-weight: bold;
     border-radius: 5px;
+}
+
+.biblia {
+    background-color: #f5e6c6;
+    font-family: var(--fonte-padrao);
+    font-weight: bold;
 }
 
 .pregador {
@@ -379,10 +410,6 @@ h1.titaula {
     padding-top: 20px;
 }
 
-a.externo::after {
-    content: '\00A0\1F517';
-}
-
 .continuar {
     width: 20%;
     margin: auto;
@@ -394,14 +421,50 @@ a.externo::after {
     text-align: center;
 }
 
-.pregador a::after {
-    content: '\00A0\1F517';
+/*================conf da index=============*/
+
+.pregador-home {
+    font-family: var(--fonte-padrao);
+    font-size: 0.7em;
+}
+
+.home-img {
+    display: flex;
+    float: center;
+}
+
+a.home {
+    font-family: var(--fonte-padrao);
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+a.home:hover {
+    color: var(--cor4);
+    background-color: var(--cor5);
+    padding: 5px;
+}
+
+.home-txt {
+    font-family: var(--fonte-padrao);
+    display: table-cell;
+    float: left;
+    min-width: 240px;
+    max-width: 862px;
+    margin-top: 10px 15px;
 }
 
 table {
     display: flex;
     justify-content: center;
     margin: auto;
+}
+
+td {
+    font-family: var(--fonte-destaque);
+    border: 2px solid #001542;
+    border-radius: 5px;
+    padding: 4px;
 }
 
 .table-container {
@@ -437,29 +500,32 @@ table {
     background-color: var(--cor2);
 }
 
-td {
-    font-family: var(--fonte-destaque);
-    border: 2px solid #001542;
-    border-radius: 5px;
-    padding: 4px;
-}
+/*=================aside==================*/
 
 aside {
+    height: auto;
     background-color: var(--cor4);
     padding: 20px 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
     max-width: 862px;
+    min-width: 300px;
     margin: auto;
 }
 
+aside article {
+    background: url(img/banner-Israel.png) bottom fixed;
+    margin: -18px;
+    padding: 20px;
+}
+
 aside article p {
+    width: 100%;
     color: var(--cor4);
     text-align: center;
+    padding: 10px;
 }
 
 aside article a {
-    
+    color: var(--cor4);
     background-color: var(--cor1);
     font-family: var(--fonte-padrao);
     font-weight: bolder;
@@ -469,29 +535,40 @@ aside article a {
 }
 
 aside article a:hover {
-    
-    padding: 10px;
-    border-radius: 5px;
-}
-
-aside > h3 {
-    font-family: var(--fonte-destaque);
-    font-size: 1.2em;
-    text-align: center;
-    color: white;
+    background-color: var(--cor5);
 }
 
 h3.site-externo {
-    color: var(--cor5);
+    color: var(--cor4);
     font-family: var(--fonte-destaque);
     text-align: center;
     font-weight: 700;
-    text-shadow: 1px 1px 1px var(--cor1);
+    text-shadow: 1px 2px 1px var(--cor1);
     padding-bottom: 20px;
 }
 
+#tele img {
+    width: 40px; height: auto;
+    display: flex;
+    float: right;
+    margin-top: -50px; 
+    padding: 10px 10px;
+}
+
+#tele img:hover {
+    border-radius: 50%;
+    background-color: var(--cor5);
+}
+
+.active {
+    text-shadow: 1px 1px 2px var(--cor5);
+}
+
+/*===============footer==================*/
+
 footer {
-    width: 100%;
+    min-width: 300px;
+    margin-top: 10px;
     background-image: linear-gradient(to bottom, var(--cor4), var(--cor1));
 }
 
