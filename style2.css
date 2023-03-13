@@ -251,8 +251,8 @@ main article a:hover {
 /*============evangelista===========*/
 
 .banner_1 {
-    background: url(img2/horizonteBanner.png) top no-repeat fixed;
-    background-size: contain;
+    background: url(img2/horizonteBanner.png) border-box no-repeat fixed;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.432);
     max-width: 900px;
     margin: auto;
     margin-bottom: 10px;
@@ -297,6 +297,7 @@ main article a:hover {
 
 .banner_2 {
     background: url(img2/caminhoEstreitoBanner.png) top no-repeat fixed;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.432);
     background-size: contain;
     max-width: 900px;
     margin: auto;
@@ -341,8 +342,8 @@ main article a:hover {
 /*===============Bereano==============*/
 
 .banner_3 {
-    background: url(img2/MatheusBereanoBanner3.png) top no-repeat fixed;
-    background-size: contain;
+    background: url(img2/MatheusBereanoBanner3.png) no-repeat fixed;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.432);
     max-width: 900px;
     margin: auto;
     margin-bottom: 10px;
@@ -628,6 +629,7 @@ td {
 aside {
     height: auto;
     background-color: var(--cor4);
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.432);
     padding: 20px 20px;
     max-width: 862px;
     min-width: 300px;
@@ -635,8 +637,8 @@ aside {
 }
 
 aside article {
-    background: url(img/banner-Israel.png) bottom fixed;
-    margin: -18px;
+    background: url(img/banner-Israel.png) bottom no-repeat fixed;
+    margin: -20px;
     padding: 20px;
 }
 
@@ -687,6 +689,28 @@ h3.site-externo {
     text-shadow: 1px 1px 2px var(--cor5);
 }
 
+/*================redes sociais===============*/
+
+.redes {
+    max-width: 900px;
+    min-width: 300px;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: var(--cor4);
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.432);
+    margin: 0 auto;
+    margin-top: 10px; margin-top: 10px;
+}
+
+.redes div {
+    padding: 5px 10px;
+}
+
+.redes a:hover {
+    opacity: .6;
+}
 /*===============footer==================*/
 
 footer {
