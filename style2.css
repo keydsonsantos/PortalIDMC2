@@ -251,28 +251,28 @@ main article a:hover {
 /*============evangelista===========*/
 
 .banner_1 {
-    width: 100%;
-    height: auto;
     background: url(img2/horizonteBanner.png) top no-repeat fixed;
-    border-radius: 10px;
-    margin: 15px 0px;
+    background-size: contain;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 10px;
 }
 
 .banner_1 h3 {
     width: 100%;
     text-align: center;
     color: var(--cor5);
+    background-color: #00154273;
     font-family: var(--fonte-destaque);
     font-size: 1.5em;
-    text-shadow: 3px 2px 3px var(--cor1);
-    padding-top: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .banner_1 p {
     text-align: center;
-    background-color: #00154281;
     font-family: var(--fonte-destaque);
-    padding: 10px;
+    padding: 20px;
     border-radius: 0px 0px 10px 10px;
 }
 
@@ -280,33 +280,44 @@ main article a:hover {
     width: 100%;
     color: var(--cor4);
     text-align: center;
+    text-decoration: none;
+    font-family: var(--fonte-destaque);
+    font-weight: 700;
+    background-color: #00154281;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.banner_1 p a:hover {
+    background-color: var(--cor5);
+    transition: .6s;
 }
 
 /*============Gilberto===========*/
 
 .banner_2 {
-    width: 100%;
-    height: auto;
     background: url(img2/caminhoEstreitoBanner.png) top no-repeat fixed;
-    border-radius: 10px;
-    margin: 15px 0px;
+    background-size: contain;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 10px;
 }
 
 .banner_2 h3 {
     width: 100%;
     text-align: center;
     color: var(--cor5);
+    background-color: #00154273;
     font-family: var(--fonte-destaque);
     font-size: 1.5em;
-    text-shadow: 3px 2px 3px var(--cor1);
-    padding-top: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .banner_2 p {
     text-align: center;
-    background-color: #00154281;
     font-family: var(--fonte-destaque);
-    padding: 10px;
+    padding: 20px;
     border-radius: 0px 0px 10px 10px;
 }
 
@@ -314,33 +325,44 @@ main article a:hover {
     width: 100%;
     color: var(--cor4);
     text-align: center;
+    text-decoration: none;
+    font-family: var(--fonte-destaque);
+    font-weight: 700;
+    background-color: #00154281;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.banner_2 p a:hover {
+    background-color: var(--cor5);
+    transition: .6s;
 }
 
 /*===============Bereano==============*/
 
 .banner_3 {
-    width: 100%;
-    height: auto;
     background: url(img2/MatheusBereanoBanner3.png) top no-repeat fixed;
-    border-radius: 10px;
-    margin: 15px 0px;
+    background-size: contain;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 10px;
 }
 
 .banner_3 h3 {
     width: 100%;
     text-align: center;
     color: var(--cor5);
+    background-color: #00154273;
     font-family: var(--fonte-destaque);
     font-size: 1.5em;
-    text-shadow: 3px 2px 3px var(--cor1);
-    padding-top: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .banner_3 p {
     text-align: center;
-    background-color: #00154281;
     font-family: var(--fonte-destaque);
-    padding: 10px;
+    padding: 20px;
     border-radius: 0px 0px 10px 10px;
 }
 
@@ -348,6 +370,17 @@ main article a:hover {
     width: 100%;
     color: var(--cor4);
     text-align: center;
+    text-decoration: none;
+    font-family: var(--fonte-destaque);
+    font-weight: 700;
+    background-color: #00154281;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.banner_3 p a:hover {
+    background-color: var(--cor5);
+    transition: .6s;
 }
 
 /*==================midias================*/
