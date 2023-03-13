@@ -248,6 +248,8 @@ main article a:hover {
     transition-duration: 0.5s;
 }
 
+/*============evangelista===========*/
+
 .banner_1 {
     width: 100%;
     height: auto;
@@ -257,6 +259,7 @@ main article a:hover {
 }
 
 .banner_1 h3 {
+    width: 100%;
     text-align: center;
     color: var(--cor5);
     font-family: var(--fonte-destaque);
@@ -270,23 +273,27 @@ main article a:hover {
     background-color: #00154281;
     font-family: var(--fonte-destaque);
     padding: 10px;
-    border-radius: 0px 10px 10px;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .banner_1 p a {
+    width: 100%;
     color: var(--cor4);
     text-align: center;
 }
 
+/*============Gilberto===========*/
+
 .banner_2 {
     width: 100%;
     height: auto;
-    background: url(img2/caminhoEstreitoBanner.png) bottom no-repeat fixed;
+    background: url(img2/caminhoEstreitoBanner.png) top no-repeat fixed;
     border-radius: 10px;
     margin: 15px 0px;
 }
 
 .banner_2 h3 {
+    width: 100%;
     text-align: center;
     color: var(--cor5);
     font-family: var(--fonte-destaque);
@@ -300,10 +307,45 @@ main article a:hover {
     background-color: #00154281;
     font-family: var(--fonte-destaque);
     padding: 10px;
-    border-radius: 0px 10px 10px;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .banner_2 p a {
+    width: 100%;
+    color: var(--cor4);
+    text-align: center;
+}
+
+/*===============Bereano==============*/
+
+.banner_3 {
+    width: 100%;
+    height: auto;
+    background: url(img2/MatheusBereanoBanner3.png) top no-repeat fixed;
+    border-radius: 10px;
+    margin: 15px 0px;
+}
+
+.banner_3 h3 {
+    width: 100%;
+    text-align: center;
+    color: var(--cor5);
+    font-family: var(--fonte-destaque);
+    font-size: 1.5em;
+    text-shadow: 3px 2px 3px var(--cor1);
+    padding-top: 25px;
+}
+
+.banner_3 p {
+    text-align: center;
+    background-color: #00154281;
+    font-family: var(--fonte-destaque);
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.banner_3 p a {
+    width: 100%;
     color: var(--cor4);
     text-align: center;
 }
