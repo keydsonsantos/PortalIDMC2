@@ -399,6 +399,30 @@ main article a:hover {
     background-color: var(--cor1);
 }
 
+.video-container video {
+    min-width: 0px;
+}
+
+#up {
+    margin: 0 auto 0 auto;
+}
+
+#up button {
+    text-align: center;
+    font-size: 2.2vw;
+    background-color: rgb(3, 167, 221);
+}
+
+#down {
+    margin: 0 auto 0 auto;
+}
+
+#down button {
+    text-align: center;
+    font-size: 2.2vw;
+    background-color: rgb(3, 167, 221);
+}
+
 .audio-container {
     position: -webkit-sticky;
     position: sticky;
@@ -412,6 +436,21 @@ main article a:hover {
 .audio-container > audio {
     height: 40px;
 }
+
+.youtube {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 78px; 
+}
+
+.youtube iframe {
+    min-width: 300px;
+    min-height: 169px;
+}
+
 /*fim*/
 
 .vesic:hover {
@@ -651,7 +690,7 @@ aside article p {
 
 aside article a {
     color: var(--cor4);
-    background-color: var(--cor1);
+    background-color: #0015428a;
     font-family: var(--fonte-padrao);
     font-weight: bolder;
     border-radius: 5px;

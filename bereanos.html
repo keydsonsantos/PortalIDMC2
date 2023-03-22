@@ -83,14 +83,25 @@
             </div>
 
             <div class="video-container">
-                <video class="video" src="videos/1 - OsNobresBereanos.webm" controls></video>
+
+                <div id="up"><button onclick="makenone()">🔼</button></div>
+                
+
+                <video style="max-width: 700px; height: auto;" controls id="video1" >
+                    <source src="videos/1 - OsNobresBereanos.webm" type="video/mp4"> seu navegador não suporta o video.
+                </video>
+
+                <div id="down"><button onclick="makereturn()">🔽</button></div>
+
             </div>
 
-            <br>
+            <script src="onOff.js"></script>
 
             <br>
 
-            <h1 class="titaula"> OS BEREANOS </h1>
+            <br>
+
+            <h1 class="titaula" id="p1"> OS BEREANOS </h1>
 
            <p>
                Vamos  a  meditação  da  Palavra  de  Deus,  onde  nós  estaremos  falando  sobre  a  importância  de 
@@ -160,7 +171,7 @@
             
             <hr>
 
-                <p style="text-align: right;">2</p>
+                <p style="text-align: right;" id="p2"><a href="#p3" style="text-decoration: none;">2</a></p>
 
                 <div class="imgpag-container">
                     <img src="img/01,p2-300.png" alt="israel">
@@ -235,7 +246,7 @@
 
             <hr>
 
-                <p style="text-align: right;">3</p>
+                <p style="text-align: right;" id="p3"><a href="#p4" style="text-decoration: none;">3</a></p>
 
                 <div class="imgpag-container">
                     <img src="img/bereanos.300.png" alt="israel">
@@ -309,7 +320,7 @@
             
             <hr>
 
-                <p style="text-align: right;">4</p>
+                <p style="text-align: right;" id="p4"><a href="#p5" style="text-decoration: none;">4</a></p>
 
                 <div class="imgpag-container">
                     <img src="img/01,p4-300.png" alt="israel">
@@ -380,7 +391,7 @@
 
             <hr>
 
-                <p style="text-align: right;">5</p>
+                <p style="text-align: right;" id="p5"><a href="#p1" style="text-decoration: none;">5</a></p>
 
                 <div class="imgpag-container">
                     <img src="img/01,p2-300.png" alt="israel">
