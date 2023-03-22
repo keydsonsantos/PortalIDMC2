@@ -370,7 +370,7 @@ main article a:hover {
     padding: 6px 5px;
     margin: 0 -6px;
     width: 100%;
-    background-color: var(--cor1);
+    background-color: #001542b9;
 }
 
 .video-container video {
