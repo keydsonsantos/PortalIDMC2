@@ -84,20 +84,27 @@
 
             <div class="video-container">
 
-                <div id="up"><button onclick="makenone()">🔼</button></div>
-                
+                <figure id="video_player">
+                    <video controls id="video1" style="max-width: 100%; height: auto;">
+                        <source src="videos/1 - OsNobresBereanos.webm" type="video/mp4">
+                        <source src="#"type="video/mp4">
+                        <source src="video/video3.mp4.mp4" type="video/mp4">
+                    </video>
 
-                <video style="max-width: 700px; height: auto;" controls id="video1" >
-                    <source src="videos/1 - OsNobresBereanos.webm" type="video/mp4"> seu navegador não suporta o video.
-                </video>
-
-                <div id="down"><button onclick="makereturn()">🔽</button></div>
+                    <figcaption>
+                        <ul>
+                            <li><button onclick="makenone()">-</button></li>
+                            <li><button onclick="makereturn()"> + </button></li>
+                        </ul>
+                    </figcaption>
+                    
+                </figure>
 
             </div>
 
             <script src="onOff.js"></script>
 
-            <br>
+            <script type="text/javascript" src="live.js"></script>
 
             <br>
 

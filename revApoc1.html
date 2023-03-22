@@ -84,10 +84,8 @@
 
             <div class="video-container">
 
-                <div id="up"><button onclick="makenone()">🔼</button></div>
-
                 <figure id="video_player">
-                    <video controls id="video1">
+                    <video controls id="video1" style="max-width: 100%; height: auto;">
                         <source src="videos2/Apocalipse1,p1.mp4" type="video/mp4">
                         <source src="videos2/Apocalipse1,p2.mp4 type="type="video/mp4">
                         <source src="video/video3.mp4.mp4" type="video/mp4">
@@ -97,12 +95,12 @@
                         <ul>
                             <li><a href="videos2/Apocalipse1,p1.mp4">Parte 1</a></li>
                             <li><a href="videos2/Apocalipse1,p2.mp4">Parte 2</a></li>
+                            <li><button onclick="makenone()">-</button></li>
+                            <li><button onclick="makereturn()"> + </button></li>
                         </ul>
                     </figcaption>
                     
                 </figure>
-
-                <div id="down"><button onclick="makereturn()">🔽</button></div>
 
             </div>
 

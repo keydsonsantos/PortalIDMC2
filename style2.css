@@ -187,38 +187,6 @@ div > .video {
     background-color: var(--cor3);
 }
 
-figcaption {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-figcaption ul {
-    margin: 8px 0;
-    list-style: none;
-}
-
-figcaption li {
-    display: inline;
-}
-
-figcaption a {
-    text-align: center;
-    color: var(--cor3);
-    background-color: var(--cor4);
-    font-size: 14px;
-    padding: 5px;
-    border-radius: 4px;
-    margin: 0 5px;
-    text-decoration: none;
-    max-width: 100%;
-    overflow: auto;
-}
-
-#video_player video { 
-    max-width: 100%;
-    
-}
 /*======================main========================*/
 main {
     padding: 20px 20px;
@@ -408,6 +376,44 @@ main article a:hover {
 .video-container video {
     margin: 0 auto 0 auto;
     min-width: 0px;
+}
+
+figcaption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+figcaption ul {
+    margin: 0;
+    list-style: none;
+}
+
+figcaption li {
+    display: inline;
+}
+
+figcaption button {
+    margin: 0 8px 0 8px;
+    padding: 5px 15px;
+    background-color: var(--cor4);
+    font-family: var(--fonte-padrao);
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+figcaption a {
+    text-align: center;
+    color: var(--cor3);
+    background-color: var(--cor4);
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 4px;
+    margin: 0 8px 0 8px;
+    text-decoration: none;
+    max-width: 100%;
+    overflow: auto;
 }
 
 #up {
