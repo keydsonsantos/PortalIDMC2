@@ -400,6 +400,7 @@ main article a:hover {
 }
 
 .video-container video {
+    margin: 0 auto 0 auto;
     min-width: 0px;
 }
 
@@ -410,6 +411,7 @@ main article a:hover {
 #up button {
     text-align: center;
     font-size: 2.2vw;
+    padding: 0 3px 0 3px;
     background-color: rgb(3, 167, 221);
 }
 
@@ -420,6 +422,7 @@ main article a:hover {
 #down button {
     text-align: center;
     font-size: 2.2vw;
+    padding: 0 3px 0 3px;
     background-color: rgb(3, 167, 221);
 }
 
