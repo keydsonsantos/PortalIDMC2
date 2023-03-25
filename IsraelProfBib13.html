@@ -86,8 +86,27 @@
                 </div>
 
                 <div class="video-container">
-                    <video class="video" src="videos/13 - IsraelProfecias.webm" controls></video>
+
+                    <figure id="video_player">
+                        <video controls id="video1" style="max-width: 100%; height: auto;">
+                            <source src="videos/13 - IsraelProfecias.webm" type="video/mp4">
+                            <source src="#"type="video/mp4">
+                            <source src="video/video3.mp4.mp4" type="video/mp4">
+                        </video>
+    
+                        <figcaption>
+                            <ul>
+                                <li><button onclick="makenone()">-</button></li>
+                                <li><button onclick="makereturn()"> + </button></li>
+                                <li id="titMovel">013 – Israel nas Profecias Bíblicas</li>
+                            </ul>
+                        </figcaption>
+                        
+                    </figure>
+    
                 </div>
+    
+                <script src="onOff.js"></script>
     
                 <br>
 

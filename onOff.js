@@ -5,5 +5,5 @@ function makenone() {
 }
             
 function makereturn() {
-    myvideo.width = 700;
+    myvideo.width= 900;
 }
